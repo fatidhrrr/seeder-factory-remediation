@@ -16,8 +16,8 @@
                         <div class="validation"></div>
                     </div>
                     <div class="form-group col-md-6 mx-auto">
-                        <input type="titre" class="form-control" name="titre" id="titre" placeholder="titre"
-                            data-rule="titre" data-msg="" />
+                        <input type="date" class="form-control" name="annee" id="annee" placeholder="annee"
+                            data-rule="annee" data-msg="" />
                         <div class="validation"></div>
                     </div>
                 </div>

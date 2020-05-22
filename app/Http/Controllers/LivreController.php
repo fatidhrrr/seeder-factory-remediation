@@ -38,7 +38,7 @@ class LivreController extends Controller
     {
         $livres=new Livre();
         $livres->livre=$request->input("livre");
-        $livres->titre=$request->input("titre");
+        $livres->annee=$request->input("annee");
         $livres->auteur=$request->input("auteur");
         $livres->save();
         return redirect()->route("livre");
@@ -79,7 +79,7 @@ class LivreController extends Controller
     {
         $livres=Livre::find($id);
         $livres->livre=$request->input("livre");
-        $livres->titre=$request->input("titre");
+        $livres->annee=$request->input("annee");
         $livres->auteur=$request->input("auteur");
         $livres->save();         
         return redirect()->route("livre");

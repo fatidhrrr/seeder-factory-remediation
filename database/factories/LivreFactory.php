@@ -2,11 +2,14 @@
 
 /** @var \Illuminate\Database\Eloquent\Factory $factory */
 
-use App\Model;
+use App\Livre;
+use App\User;
 use Faker\Generator as Faker;
 
-$factory->define(Model::class, function (Faker $faker) {
+$factory->define(Livre::class, function (Faker $faker) {
     return [
-        //
+        'livre' => $faker->name,
+        'annee' => $faker->date,
+        'auteur' => $faker->name,
     ];
 });

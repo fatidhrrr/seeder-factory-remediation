@@ -18,7 +18,7 @@
                     <tr>
                         <th scope="col">#</th>
                         <th scope="col">Livres</th>
-                        <th scope="col">Titres</th>
+                        <th scope="col">Année</th>
                         <th scope="col">Auteurs</th>
                         <th scope="col">Action</th>
                     </tr>
@@ -28,7 +28,7 @@
                     <tr>
                         <td>{{$item->id}}</td>
                         <td>{{$item->livre}}</td>
-                        <td>{{$item->titre}}</td>
+                        <td>{{$item->annee}}</td>
                         <td>{{$item->auteur}}</td>
                     <td>
                         <a href='{{route('edit', $item->id)}}' class='btn btn-warning'>Edit</a>
