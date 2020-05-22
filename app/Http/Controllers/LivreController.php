@@ -52,7 +52,8 @@ class LivreController extends Controller
      */
     public function show($id)
     {
-        //
+        $livres=Livre::find($id);
+        return view("show", compact('livres'));
     }
 
     /**
